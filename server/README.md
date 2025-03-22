@@ -12,3 +12,6 @@
 - How to secure API => xss-clean, express-rate-limit
 - Environment variable & .gitignore
 - MVC Architecture
+- Connect to MongoDB Database
+- Schema & Model for User
+- Create seed route for testing
