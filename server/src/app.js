@@ -6,12 +6,12 @@ const xssClean = require("xss-clean");
 const rateLimit = require("express-rate-limit");
 const userRouter = require("./routers/userRouter");
 const { seedRouter } = require("./routers/seedRouter");
-const errorResponse = require("./controllers/responseController");
+const { errorResponse } = require("./controllers/responseController");
 const app = express();
 
 const rateLimiter = rateLimit({
   windowMs: 1 * 60 * 1000, // 1 minutes
-  max: 3,
+  max: 10,
   message: "Too many request from this IP. Please try again later",
 });
 
