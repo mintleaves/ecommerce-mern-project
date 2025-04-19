@@ -22,6 +22,11 @@
 - DELETE /api/users/id: -> delete a single user by id
 - Refactoring & reusuability, dynamic
 - Delete Image helper
+- POST /api/users/process-register -> process the registratiopn
+- Create JWT
+- Setup SMTP server & prepare email
+- send Email
+- POST /api/users/verify -> verify + register into DB
 - Add express validator middleware
 - Add multi middleware for file upload
 - POST /api/users -> create an user
