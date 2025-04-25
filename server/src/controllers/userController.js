@@ -107,9 +107,9 @@ const processRegister = async (req, res, next) => {
       html: `<h1>Welcome ${name}</h1><p>Please click the link below to activate your account</p><a href="${clientURL}/api/users/activate your account/${token}" target="_blank">Activate Account</a>`,
     };
 
-    //send with nodemailer
+    //send email with nodemailer
     try {
-      await emailWithNodemail(emailData);
+      // await emailWithNodemail(emailData);
     } catch (emailError) {
       next(createError(500, "Failed to send verification email"));
       return;
